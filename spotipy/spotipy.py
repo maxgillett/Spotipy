@@ -82,7 +82,7 @@ class Spotipy:
             subprocess.call([
                 'osascript',
                 '-e',
-                'tell app \'Spotify\' to play track \'%s\'' % uri
+                'tell app "Spotify" to play track "%s"' % uri
             ])
 
         print '\nPlaying: %s \n' % str(self._songs[index]['song'])
@@ -103,7 +103,7 @@ class Spotipy:
             subprocess.call([
                 'osascript',
                 '-e',
-                'tell app \'Spotify\' to next track'
+                'tell app "Spotify" to next track'
             ])
 
     def prev(self):
@@ -113,7 +113,7 @@ class Spotipy:
             subprocess.call([
                 'osascript',
                 '-e',
-                'tell app \'Spotify\' to previous track'
+                'tell app "Spotify" to previous track'
         ])
 
     def play_pause(self):
@@ -123,7 +123,7 @@ class Spotipy:
             subprocess.call([
                 'osascript',
                 '-e',
-                'tell app \'Spotify\' to playpause'
+                'tell app "Spotify" to playpause'
             ])
 
     def pause(self):
@@ -133,5 +133,5 @@ class Spotipy:
             subprocess.call([
                 'osascript',
                 '-e',
-                'tell app \'Spotify\' to pause'
+                'tell app "Spotify" to pause'
             ])
